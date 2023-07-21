@@ -6,7 +6,9 @@ import router from './router'
 import { createStore } from "vuex";
 // Create a new store instance or import from module.
 const store = createStore({
-  /* state, actions, mutations */
+  state: {
+    counter: 1
+  }
 });
 const app = createApp()
 app.use(store)
